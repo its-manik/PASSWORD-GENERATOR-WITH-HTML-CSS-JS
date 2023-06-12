@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Nunito";
+}
+body{
+    background: #F8FAFC;
+}
+
+.generator{
+    background: #fff;
+    width: 380px;
+    margin: 150px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+div.password{
+    border: 1px solid #9b9b9b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0px;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+div.password input{
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    padding: 7px 10px;
+    border: 0;
+    font-size: 20px;
+}
+div.password span{
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.range{
+    display: flex;
+    flex-direction: column;
+}
+.range > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5px;
+    margin-bottom: 5px;
+}
+
+.range > input{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 3px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 25px;
+}
+.range > input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 17px;
+    width: 17px;
+    background: #23c1ff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+
+.options > div {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+
+
+.options label{
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #F8FAFC;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+} 
+.option input{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #23c1ff;
+    border-radius: 2.5px;
+    transition: all .2s ease;
+    transform-style: preserve-3d;
+}
+
+.option input:checked{
+    transform: rotate(315deg);
+    background: #23c1ff;
+
+}
+
+
+
+button.generate{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    padding: 7px 0;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 20px;
+    background: #23c1ff;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #23c1ff;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+button.generate:hover{
+    background: transparent;
+    border: 2px solid #23c1ff;
+    color: black;
+}
