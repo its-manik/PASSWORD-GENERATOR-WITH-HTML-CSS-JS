@@ -96,8 +96,8 @@ div.password span{
 .option input{
     -webkit-appearance: none;
     appearance: none;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     border: 1px solid #23c1ff;
     border-radius: 2.5px;
     transition: all .2s ease;
